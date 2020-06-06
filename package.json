@@ -1,0 +1,33 @@
+{
+  "author": {
+    "name": "adnan-iug"
+  },
+  "bin": {
+    "adnan-redirect": "./bin/index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "description": "force https",
+  "keywords": [
+    "force-https",
+    "redirect",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "main": "./bin/index.js",
+  "name": "adnan-redirect",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amuammer/adnan-redirect"
+  },
+  "bugs": {
+    "url": "https://github.com/amuammer/adnan-redirect/issues"
+  },
+  "scripts": {
+    "start": "node bin/deploy-react.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.1"
+}
