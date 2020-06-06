@@ -6,9 +6,9 @@ npm install -g redirect-adnan
 ```
 <hr>
 
-### deploy to specific port
+### run redirect as proxy 80 => 443
 ```javascript
-redirect-adnan -p 80
+redirect-adnan -p 80 -port 443
 ```
 
 ### redirect to host
@@ -18,7 +18,7 @@ redirect-adnan  -p 80 -host "127.0.0.1"
 
 ### redirect to port
 ```javascript
-redirect-adnan -p 80 -port 443
+redirect-adnan -port 443
 ```
 
 ### redirect to protocol
