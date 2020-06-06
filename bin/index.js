@@ -26,8 +26,8 @@
 const express = require("express");
 const app = express();
 
-let port = process.env.PORT || 3000; // default port
-let host = "127.0.0.1";
+let port = process.env.PORT || 80; // default port
+let host;
 let hostPort = 443; // default hostPort = 443
 let protocol = "https";
 
@@ -54,8 +54,9 @@ if (indexProtocol !== -1) {
 }
 
 app.use((req, res) => {
-const redirect = `${protocol}://${host}:${hostPort}${req.url}`;
-res.redirect(`${protocol}://${host}:${hostPort}${req.url}`);
+  // default is the default is the origin
+const redirect = `${protocol}://${host ? host : req.get('host')}:${hostPort}${req.url}`;
+res.redirect(redirect);
 });
 
 
@@ -63,7 +64,7 @@ function startServer() {
     console.log(`trying to running on port ${port}`);
    app.listen(port, () => { // http server
         console.log(`http server is running at port:${port}`);
-        console.log( `redirect to => ${protocol}://${host}:${hostPort}`);
+        console.log( `redirect to => ${protocol}://${host ? host: "origin"}:${hostPort}`);
     }).on("error", (err) => {
       console.error(err.message);
       process.exit(1);

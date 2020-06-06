@@ -8,17 +8,17 @@ npm install -g redirect-adnan
 
 ### deploy to specific port
 ```javascript
-redirect-adnan -p 8080
+redirect-adnan -p 80
 ```
 
 ### redirect to host
 ```javascript
-redirect-adnan -host "127.0.0.1"
+redirect-adnan  -p 80 -host "127.0.0.1"
 ```
 
 ### redirect to port
 ```javascript
-redirect-adnan -port 443
+redirect-adnan -p 80 -port 443
 ```
 
 ### redirect to protocol
