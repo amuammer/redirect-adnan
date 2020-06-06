@@ -1,4 +1,4 @@
-# deploy-react
+# redirect-adnan
 
 ## install
 ```javascript
@@ -29,6 +29,7 @@ redirect-adnan -protocol "https"
 ### redirect with multiple parameters
 ```javascript
 redirect-adnan -p 80 -protocol "https" -host "127.0.0.1" -port 443
+redirect-adnan -p 80 -protocol "https" -host "www.domain.com" -port 443
 ```
 
 ## License

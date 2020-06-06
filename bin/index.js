@@ -54,7 +54,8 @@ if (indexProtocol !== -1) {
 }
 
 app.use((req, res) => {
-res.redirect(`${protocol}://${host}:${port}${req.url}`);
+const redirect = `${protocol}://${host}:${hostPort}${req.url}`;
+res.redirect(`${protocol}://${host}:${hostPort}${req.url}`);
 });
 
 
@@ -62,6 +63,7 @@ function startServer() {
     console.log(`trying to running on port ${port}`);
    app.listen(port, () => { // http server
         console.log(`http server is running at port:${port}`);
+        console.log( `redirect to => ${protocol}://${host}:${hostPort}`);
     }).on("error", (err) => {
       console.error(err.message);
       process.exit(1);
