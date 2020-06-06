@@ -6,14 +6,26 @@ npm install -g redirect-adnan
 ```
 <hr>
 
-### run redirect as proxy 80 => 443
+## default values
+
+| Var           | Default Value   |
+| ------------- |:-------------:|
+| p    | 80 |
+| host | origin - req.host      |
+| port | 443      |
+| protocol | https |
+
+<hr>
+
+### redirect as proxy 80 => 443
 ```javascript
 redirect-adnan -p 80 -port 443
 ```
 
 ### redirect to host
 ```javascript
-redirect-adnan  -p 80 -host "127.0.0.1"
+redirect-adnan  -host "127.0.0.1"
+redirect-adnan  -host "www.domain.com"
 ```
 
 ### redirect to port
