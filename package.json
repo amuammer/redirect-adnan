@@ -3,7 +3,7 @@
     "name": "adnan-iug"
   },
   "bin": {
-    "adnan-redirect": "./bin/index.js"
+    "redirect-adnan": "./bin/index.js"
   },
   "dependencies": {
     "express": "^4.16.4"
@@ -16,14 +16,14 @@
   ],
   "license": "MIT",
   "main": "./bin/index.js",
-  "name": "adnan-redirect",
+  "name": "redirect-adnan",
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/amuammer/adnan-redirect"
+    "url": "https://github.com/amuammer/redirect-adnan"
   },
   "bugs": {
-    "url": "https://github.com/amuammer/adnan-redirect/issues"
+    "url": "https://github.com/amuammer/redirect-adnan/issues"
   },
   "scripts": {
     "start": "node bin/deploy-react.js",
