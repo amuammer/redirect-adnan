@@ -18,30 +18,34 @@ npm install -g redirect-adnan
 <hr>
 
 ### redirect as proxy 80 => 443
-```javascript
+```bash
 redirect-adnan -p 80 -port 443
 ```
 
 ### redirect to host
-```javascript
+```bash
 redirect-adnan  -host "127.0.0.1"
 redirect-adnan  -host "www.domain.com"
 ```
 
 ### redirect to port
-```javascript
+```bash
 redirect-adnan -port 443
 ```
 
 ### redirect to protocol
-```javascript
+```bash
 redirect-adnan -protocol "https"
 ```
 
 ### redirect with multiple parameters
-```javascript
+```bash
 redirect-adnan -p 80 -protocol "https" -host "127.0.0.1" -port 443
 redirect-adnan -p 80 -protocol "https" -host "www.domain.com" -port 443
+```
+### redirect to google as port test
+```bash
+redirect-adnan -p 9090 -host "www.google.com" -prot 443
 ```
 
 ## License
